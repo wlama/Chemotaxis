@@ -13,7 +13,7 @@ float PIE = 3.1415926535897;
   background(0);
   for(int i = 0; i < 1; i++) {
     organisms[i].show();
-    //organisms[i].move();
+    organisms[i].move();
     pacman = new Pacman(mouseX, mouseY);
     pacman.show();
   }
@@ -68,7 +68,6 @@ float PIE = 3.1415926535897;
    }
    void show() {
      noStroke();
-     //ellipse(myX, myY, 10, 10);
      fill(pacmanColor);
      arc(myX, myY, 30, 30, PIE / 4 - 6.4, PIE / 2 - 2.1);
    }
