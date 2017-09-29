@@ -1,19 +1,19 @@
 Bacteria[] organisms = new Bacteria[100];
 Pacman pacman = new Pacman(250, 250);
-int PIE = 3.1415;
+float PIE = 3.1415926535897;
  void setup()   
  {     
    size(500, 500);
-   for(int i = 0; i < 15; i++) {
+   for(int i = 0; i < 1; i++) {
      organisms[i] = new Bacteria(100, 100);
    }
  }   
  void draw()   
  {    
   background(0);
-  for(int i = 0; i < 15; i++) {
+  for(int i = 0; i < 1; i++) {
     organisms[i].show();
-    organisms[i].move();
+    //organisms[i].move();
     pacman = new Pacman(mouseX, mouseY);
     pacman.show();
   }
@@ -42,7 +42,7 @@ int PIE = 3.1415;
    void show() {
       fill(bacteriaColor);
       //body
-      arc(myX - 2, myY, 30, 40, PIE / 4 - 3.1, PIE / 4);
+      arc(myX - 2, myY, 30, 40, PIE / 4 - 4.1, PIE / 4 - .8);
       //feet
       ellipse(myX + 8, myY + 1, 10, 10);
       ellipse(myX - 2, myY + 1, 10, 10);
@@ -70,6 +70,6 @@ int PIE = 3.1415;
      noStroke();
      //ellipse(myX, myY, 10, 10);
      fill(pacmanColor);
-     arc(myX, myY, 30, 30, PIE / 4 - 5.6, PIE / 2 - 1.5);
+     arc(myX, myY, 30, 30, PIE / 4 - 6.4, PIE / 2 - 2.1);
    }
  }
