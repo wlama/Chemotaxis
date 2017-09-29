@@ -4,14 +4,14 @@ float PIE = 3.1415926535897;
  void setup()   
  {     
    size(500, 500);
-   for(int i = 0; i < 1; i++) {
+   for(int i = 0; i < 10; i++) {
      organisms[i] = new Bacteria(100, 100);
    }
  }   
  void draw()   
  {    
   background(0);
-  for(int i = 0; i < 1; i++) {
+  for(int i = 0; i < 10; i++) {
     organisms[i].show();
     organisms[i].move();
     pacman = new Pacman(mouseX, mouseY);
