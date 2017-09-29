@@ -1,5 +1,6 @@
 Bacteria[] organisms = new Bacteria[100];
 Pacman pacman = new Pacman(250, 250);
+int PIE = 3.1415;
  void setup()   
  {     
    size(500, 500);
